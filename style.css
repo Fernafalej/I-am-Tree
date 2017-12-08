@@ -1,0 +1,104 @@
+body{
+	background-color: #404040;
+	color: #b0b0b0;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+}
+.overlayHolder{
+	display: none;
+	z-index: 17;
+	background-color: rgba(80,80,80,0.5);
+	width : 1015px;
+	height : 100%;
+	position : absolute;
+	top: 0px;
+	left: 0px;
+}
+.overlay{
+	border: 3px solid #337777;
+	padding: 10px;
+	border-radius: 10px;
+    position: absolute;
+    top: 5%;
+	left: 5%;
+    width: 730px;
+	height: 500px;
+	z-index: 20;
+	background-color: #404040;
+	color : #20c0c0;
+}
+.overlayText{
+	height: 420px;
+	overflow-y: auto;
+}
+.closeButton{
+	text-align: center;
+	border-radius: 15px;
+	position: absolute;
+	width : 80px;
+	left : 325px;
+	bottom: 8px;
+	color: lightgrey;
+	background-color: darkgrey;
+}
+.closeButton:hover{
+	color: darkgrey;
+	background-color: lightgrey;
+}
+.flex-row{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+}
+#resources{
+	position:sticky;
+	width: 200px;
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	background-color: #303080;
+	border: 2px solid #202070;
+	padding: 5px;
+	margin: 2px;
+	border-radius: 5px;
+}
+.resource{
+	background-color: #404090;
+	padding: 1px;
+	margin:2px;
+	border-radius: 4px;
+}
+#growables{
+	position:sticky;
+	width: 200px;
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction:column;
+	background-color: #803030;
+	border: 2px solid #702020;
+	padding: 5px;
+	margin: 2px;
+	border-radius: 5px;
+}
+.growable{
+	background-color: #904040;
+	padding: 1px;
+	margin:2px;
+	border-radius: 4px;
+}
+.growable:hover .growCost{
+	display: inline;
+}
+.growCost{
+	display: none;
+	position: absolute;
+	right: -44px;
+	width: 50px;
+	background-color: #a05050;
+	z-index: 20;
+}

@@ -1,0 +1,49 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" href="style.css">
+	<script src = "general.js"></script>
+	<title> I am Tree </title>
+</head>
+<body>
+<div class="flex-row">
+	<div id="resources">
+		<div id="Minerals" class="resource">
+			Minerals
+		</div>
+		<div id="Water" class="resource">
+			Water
+		</div>
+		<div id="Light" class="resource">
+			Light
+		</div>
+		<div id="Starch" class="resource">
+			Starch
+		</div>
+	</div>
+	<div id="growables">
+		<div id="Leaves" class ="growable" onclick="growMe(this.id);">Leaves
+			<div id="LeavesCost" class="growCost"></div>
+		</div>
+		<div id="Wood" class ="growable" onclick="growMe(this.id);">Wood
+			<div id="WoodCost" class="growCost"></div>
+		</div>
+		<div id="Roots" class ="growable" onclick="growMe(this.id);">Roots
+			<div id="RootsCost" class="growCost"></div>
+		</div>
+		<div id="Blossoms" class ="growable" onclick="growMe(this.id);">Blossoms
+			<div id="BlossomsCost" class="growCost"></div>
+		</div>
+	</div>
+</div>
+<div id="promptHolder" class="overlayHolder">
+		<div id ="promptOverlay" class ="overlay">
+			<div id="promptText" class= "overlayText">
+			</div>
+			<div onclick="document.getElementById('promptHolder').style.display = 'none'" id="promptClose" class="closeButton">
+				Close!
+			</div>
+		</div>
+	</div>
+</body>
+</html>
